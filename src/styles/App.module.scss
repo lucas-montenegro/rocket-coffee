@@ -1,0 +1,63 @@
+.hero {
+    max-width: 548px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1 {
+        font: 700 7rem "Manrope", sans-serif;
+        line-height: 109px;
+        color: var(--text-color);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 + h1 {
+        color: transparent;
+        -webkit-text-stroke: 2px var(--button);
+    }
+
+    img {
+        position: absolute;
+        bottom: 0;
+
+        @media (max-height: 740px) {
+            height: 340px;
+        }
+
+        @media (max-width: 428px) {
+            width: 428px;
+            height: 333px;
+        }
+    }
+}
+
+.blurOne, .blurTwo {
+    z-index: -1;
+    position: absolute;
+
+    width: 321px;
+    height: 321px;
+
+    background-color: var(--blur-color);
+    filter: blur(200px);
+}
+
+.blurOne {
+    bottom: 0;
+    left: 0;
+}
+
+.blurTwo {
+    top: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
