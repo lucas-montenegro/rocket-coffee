@@ -31,7 +31,9 @@ function App() {
             <h1>&lt; Great Code /&gt;</h1>  
           </div>
 
-          <img src="./rocket-coffee.svg" alt="cofee image" />
+          <div className={styles.heroBottom}>
+              <img src="./rocket-coffee.svg" alt="cofee image" />  
+          </div>
         </div>
 
         <div className={styles.blurOne} />
