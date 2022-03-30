@@ -1,6 +1,8 @@
+import { CoffeeButton } from '../CoffeeButton';
+
 import styles from './styles.module.scss';
 
-export function Header() {
+export function HeaderDesktop() {
     return (
         <>
             <div className={styles.headerBox}>
@@ -32,7 +34,7 @@ export function Header() {
                     </ul>
                 </div>
 
-                <button>PEGAR MEU CAFÉ</button>
+                <CoffeeButton />
             </div>
         </>
     )
