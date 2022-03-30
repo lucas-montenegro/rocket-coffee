@@ -25,20 +25,21 @@
     img {
         position: absolute;
         bottom: 0;
+        width: 100%;
+
+        @media (min-height: 768px) {
+            height: 500px;
+        }
 
         @media (max-height: 740px) {
             height: 340px;
-        }
-
-        @media (max-width: 428px) {
-            
         }
     }
 }
 
 .heroMobile {
     max-width: 373px;
-    margin: 88px auto 0;
+    margin: 11rem auto 0;
 
     display: flex;
     flex-direction: column;
@@ -46,18 +47,19 @@
     text-align: center;
     
     & > h1 {
-        font: 600 30px "Manrope", sans-serif;
-        line-height: 41px;
+        margin: 0 2.8rem 11rem;
+        font: 600 3.75rem "Manrope", sans-serif;
+        line-height: 5.125rem;
 
-        margin-bottom: 88px;
+        margin-bottom: 11rem;
     }
 
     .homepageTitles {
-        margin: 98px 0 0;
+        margin: 12.25rem 0 0;
 
         h1 {
-            font: 700 45px "Manrope", sans-serif;
-            line-height: 68px;
+            font: 700 5.625rem "Manrope", sans-serif;
+            line-height: 8.5rem;
             color: var(--text-color);
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -68,13 +70,30 @@
         }
     }
 
-    img {
-        position: absolute;
-        bottom: 0;
+    .heroBottom {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
 
-        width: 428px;
-        height: 239px;
+        img {
+            display: block;
+            position: absolute;
+            top: 0;
+    
+            width: 100%;
+            height: 259px;
+    
+            /*@media (max-height: 878px) {
+                height: 200px;
+            }
+    
+            @media (max-height: 740px) {
+                height: 150px;
+            }*/
+        }
     }
+
+   
 }
 
 .blurOne, .blurTwo {
@@ -103,7 +122,7 @@
     position: absolute;
     bottom: 0;
 
-    width: 321px;
+    width: 100%;
     height: 321px;
 
     background-color: var(--blur-color);

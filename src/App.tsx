@@ -8,11 +8,12 @@ import styles from './styles/App.module.scss';
 import { CoffeeButton } from './components/CoffeeButton';
 
 function App() {
+  const mobileWidth = 500;
   const { height, width } = useWindowDimensions();
-  const [isMobile, setIsMobile] = useState((width > 768) ? false : true);
+  const [isMobile, setIsMobile] = useState((width > mobileWidth) ? false : true);
 
   useEffect(() => {
-    if (width > 768) {
+    if (width > mobileWidth) {
       setIsMobile(false);
     } else {
       setIsMobile(true);
@@ -49,7 +50,9 @@ function App() {
               <h1>&lt; Great Code /&gt;</h1>  
             </div>
 
-            <img src="./rocket-coffee.svg" alt="cofee image" />
+            <div className={styles.heroBottom}>
+              <img src="./rocket-coffee.svg" alt="cofee image" />  
+            </div>
 
             <div className={styles.blurMobile} />
           </div>
